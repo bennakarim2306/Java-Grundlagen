@@ -10,17 +10,14 @@ public class Tag2_05_BenutzereingabenScanner {
         System.out.print("Wie heisst du? ");
         String name = scanner.nextLine();
 
+        // Denkfrage: Was passiert, wenn der Benutzer statt einer Zahl "zehn" eingibt?
         int lieblingsZahl = leseInt(scanner, "Nenne deine Lieblingszahl: ");
         int verdoppelt = lieblingsZahl * 2;
 
         System.out.println("Hallo " + name + "!");
         System.out.println("Deine Zahl verdoppelt ist: " + verdoppelt);
 
-        if (lieblingsZahl % 2 == 0) {
-            System.out.println("Fun Fact: Deine Zahl ist gerade.");
-        } else {
-            System.out.println("Fun Fact: Deine Zahl ist ungerade.");
-        }
+        System.out.println("Die Eingabe wurde gelesen und kann jetzt weiterverarbeitet werden.");
     }
 
     private static int leseInt(Scanner scanner, String prompt) {
@@ -35,4 +32,3 @@ public class Tag2_05_BenutzereingabenScanner {
         }
     }
 }
-

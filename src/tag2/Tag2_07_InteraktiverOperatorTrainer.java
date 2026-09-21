@@ -10,6 +10,7 @@ public class Tag2_07_InteraktiverOperatorTrainer {
         System.out.println("=== Operator-Trainer (3 kurze Runden) ===");
         System.out.println("Tipp: Es geht nicht um Tempo, sondern ums Verstehen.");
 
+        // Denkfrage: Warum liefert frage eine Zahl zurueck, statt nur Text auszugeben?
         punkte += frage(scanner, "Runde 1: 10 + 5 = ?", 15);
         punkte += frage(scanner, "Runde 2: 8 * 4 = ?", 32);
         punkte += frage(scanner, "Runde 3: 17 % 3 = ?", 2);
@@ -47,4 +48,3 @@ public class Tag2_07_InteraktiverOperatorTrainer {
         }
     }
 }
-

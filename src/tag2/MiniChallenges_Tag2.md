@@ -37,3 +37,12 @@ In `Tag2_07_InteraktiverOperatorTrainer`:
 - Fuege 2 weitere Runden hinzu.
 - Vergib am Ende Bronze/Silber/Gold je nach Punktzahl.
 
+## Challenge 9 - Schleifen
+- Gib mit zwei verschachtelten `for`-Schleifen ein Rechteck aus.
+- Ueberspringe mit `continue` alle geraden Zahlen.
+- Beende die Schleife mit `break`, sobald eine Zielzahl erreicht ist.
+
+## Challenge 10 - Methoden
+- Schreibe `static boolean istGerade(int zahl)`.
+- Schreibe `static int maximum(int a, int b)` mit `return`.
+- Ueberlade `zeige` fuer `int` und `String`.

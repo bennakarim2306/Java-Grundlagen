@@ -13,6 +13,7 @@ public class Tag2_03_IfElseElseIf {
         }
 
         int note = 2;
+        // Denkfrage: Was würde passieren, wenn die Prüfung auf Note == 3 vor Note == 2 stünde?
         if (note == 1) {
             System.out.println("Sehr gut");
         } else if (note == 2) {
@@ -20,13 +21,9 @@ public class Tag2_03_IfElseElseIf {
         } else if (note == 3) {
             System.out.println("Befriedigend");
         } else {
-            System.out.println("Uebungsbedarf");
+            System.out.println("Übungsbedarf");
         }
 
-        boolean regen = false;
-        if (!regen) {
-            System.out.println("Perfekt fuer einen Spaziergang.");
-        }
+        System.out.println("Verschachtelte Bedingungen folgen in Tag2_14_VerschachtelteBedingungen.");
     }
 }
-

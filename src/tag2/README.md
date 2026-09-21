@@ -1,38 +1,38 @@
-# Tag 2 Material (src/tag2)
+# Tag 2: Java-Grundlagen interaktiv
 
-Tag 2 macht Programme "denkfaehig": rechnen, vergleichen, Entscheidungen treffen und Eingaben verarbeiten.
+Dieser Ordner ist ein kompletter Lernpfad: Jede nummerierte Java-Datei behandelt ein
+Thema, zeigt ein kleines Beispiel und endet mit einer Frage oder einem Mini-Quiz.
+Die Antworten stehen absichtlich nur in `Loesungen_Tag2.md`.
 
-## Empfohlene Reihenfolge
-1. `Tag2_01_Rechenoperatoren.java`
-2. `Tag2_02_VergleichsoperatorenUndLogik.java`
-3. `Tag2_03_IfElseElseIf.java`
-4. `Tag2_04_SwitchBeispiele.java`
-5. `Tag2_05_BenutzereingabenScanner.java`
-6. `Tag2_06_AbschlussprogrammAlterCheck.java`
-7. `Tag2_07_InteraktiverOperatorTrainer.java`
-8. `Tag2_08_SelberAendern.java`
+## Reihenfolge
+1. `Tag2_01_Rechenoperatoren.java` - `+`, `-`, `*`, `/`, `%`
+2. `Tag2_02_VergleichsoperatorenUndLogik.java` - Vergleichsoperatoren
+3. `Tag2_03_IfElseElseIf.java` - Entscheidungen
+4. `Tag2_04_SwitchBeispiele.java` - feste Auswahl
+5. `Tag2_05_BenutzereingabenScanner.java` - `Scanner` und Eingaben
+6. `Tag2_09_Zuweisungsoperatoren.java` - `=`, `+=`, `-=`, `*=`, `/=`, `%=`
+7. `Tag2_10_InkrementDekrement.java` - `++` und `--`
+8. `Tag2_11_BoolscheAusdruecke.java` - Wahrheitswerte und Logik
+9. `Tag2_12_OperatorPrioritaet.java` - Reihenfolge und Klammern
+10. `Tag2_03_IfElseElseIf.java` - `if`, `else if`, `else`
+11. `Tag2_14_VerschachtelteBedingungen.java` - Bedingungen in Bedingungen
+12. `Tag2_04_SwitchBeispiele.java` - `switch`, `case`, `break`, `default`
+13. `Tag2_16_Schleifen.java` - Schleifenkonzepte, `while`, `do-while`, `for`
+14. `Tag2_17_VerschachtelteSchleifen.java` - Schleifen in Schleifen
+15. `Tag2_18_BreakContinue.java` - `break` und `continue`
+16. `Tag2_19_Methoden.java` - Aufruf, Parameter, Argumente, `return`, `void`
+17. `Tag2_20_Scope.java` - lokale Variablen und Sichtbarkeit
+18. `Tag2_21_MethodOverloading.java` - ueberladene Methoden
 
-## Zusatzmaterial
-- `Erklaerung_Tag2.md`
-- `MiniChallenges_Tag2.md`
-- `Quiz_Tag2.md`
-- `Tagesablauf_Tag2.md`
+Die Dateien 06-08 sowie `Tag2_07_InteraktiverOperatorTrainer.java` und
+`Tag2_08_SelberAendern.java` bleiben als Wiederholung und Projektaufgaben erhalten.
 
-## Alles kompilieren (Windows PowerShell)
+## Starten
+
 ```powershell
-javac src/tag2/*.java
+javac -d out\tag2 src\tag2\*.java
+java -cp out\tag2 tag2.Tag2Runner
 ```
 
-## Interaktives Menue starten
-```powershell
-java -cp src tag2.Tag2Runner
-```
-
-## Direkt das Abschlussprogramm starten
-```powershell
-java -cp src tag2.Tag2_06_AbschlussprogrammAlterCheck
-```
-
-## Tipp fuer den Unterricht
-Starte mit `Tag2Runner`, dann koennen Lernende selbst zwischen Demos, Aufgaben und Trainer wechseln.
-
+Der Runner bietet alle Beispiele ueber ein Menue an. Fuer den Unterricht koennen
+Schueler zuerst selbst antworten und danach gemeinsam die jeweilige Loesung lesen.

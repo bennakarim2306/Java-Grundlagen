@@ -6,6 +6,7 @@ public class Tag2_08_SelberAendern {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // Denkfrage: Welche Eingaben machen beispielUnd und beispielOder gleichzeitig wahr?
         // TODO 1: Aendere die Startwerte und beobachte die Ausgabe.
         int a = leseInt(scanner, "Gib a ein: ");
         int b = leseInt(scanner, "Gib b ein: ");

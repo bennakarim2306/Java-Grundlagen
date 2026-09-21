@@ -7,6 +7,7 @@ public class Tag2_06_AbschlussprogrammAlterCheck {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("=== Abschlussprogramm: Altercheck ===");
+        // Denkfrage: Warum sollte ein unmoegliches Alter vor der Altersgruppe abgefangen werden?
         int age = leseInt(scanner, "Bitte gib dein Alter ein: ");
 
         if (age < 0 || age > 130) {
@@ -35,4 +36,3 @@ public class Tag2_06_AbschlussprogrammAlterCheck {
         }
     }
 }
-

@@ -1,42 +1,27 @@
 # Quiz - Tag 2
 
-## Teil A - Wissen
-1. Was macht der Operator `%`?
-2. Was ist der Unterschied zwischen `==` und `=`?
-3. Wann nutzt man `&&` statt `||`?
-4. Was macht `!true`?
-5. Wofuer ist `else if` hilfreich?
-6. Wann ist `switch` oft uebersichtlicher als viele `if`-Bedingungen?
-7. Wozu dient `Scanner`?
+Bearbeite die Fragen zuerst ohne die Lösungsdatei.
 
-## Teil B - Kleine Codefragen
-8. Ergebnis von `10 / 3` bei `int`?
-9. Ergebnis von `10 % 3`?
-10. Was gibt aus?
-```java
-int age = 17;
-if (age >= 18) {
-    System.out.println("Adult");
-} else {
-    System.out.println("Minor");
-}
-```
-11. Ergaenze eine Bedingung: "Einlass nur mit Ticket und Alter >= 16".
-12. Nenne zwei gueltige Vergleichsoperatoren.
+1. Was ist der Unterschied zwischen `/` und `%` bei `int`?
+2. Schreibe `punkte = punkte + 5` als Zuweisungsoperator.
+3. Was ist der Unterschied zwischen `counter++` und `++counter` in einem Ausdruck?
+4. Welche Vergleichsoperatoren kennst du?
+5. Wann nutzt man `&&`, wann `||`?
+6. Was ergibt `!false`?
+7. Was ergibt `2 + 3 * 4` und warum?
+8. Wie liest man eine ganze Zahl mit `Scanner` und `Integer.parseInt` ein?
+9. Wann ist `switch` übersichtlicher als viele `if`-Bedingungen?
+10. Was ist der Unterschied zwischen `while` und `do-while`?
+11. Wozu dient ein Schleifenzähler?
+12. Was bewirken `break` und `continue`?
+13. Was ist ein Parameter, was ist ein Argument?
+14. Was ist der Unterschied zwischen `return` und `void`?
+15. Was bedeutet Scope?
+16. Welche Regel gilt für Method Overloading?
 
----
+## Praxis
 
-## Loesungen
-1. Rest einer Division
-2. `==` vergleicht, `=` weist zu
-3. Wenn beide Bedingungen wahr sein muessen
-4. `false`
-5. Fuer mehrere abgestufte Bedingungen
-6. Bei vielen festen Werten derselben Variablen
-7. Um Benutzereingaben aus der Konsole einzulesen
-8. `3`
-9. `1`
-10. `Minor`
-11. `hatTicket && age >= 16`
-12. z. B. `>=`, `!=`
-
+1. Baue einen Taschenrechner mit `Scanner`, `switch` und vier Rechenarten.
+2. Gib mit verschachtelten `for`-Schleifen ein 5x5-Sternmuster aus.
+3. Schreibe eine Methode `istGerade(int zahl)`, die einen `boolean` zurückgibt.
+4. Überlade eine Methode `zeige(...)` für `int` und `String`.

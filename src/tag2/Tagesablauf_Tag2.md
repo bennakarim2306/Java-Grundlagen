@@ -1,38 +1,42 @@
-# Tagesablauf - Tag 2 (Vorschlag, ca. 90 Minuten)
+# Tagesablauf - Tag 2 (Vorschlag, ca. 180 Minuten)
 
-## Block 1 (15 min) - Warm-up
-- Rueckblick Tag 1
-- Zielbild heute: "Das Programm trifft Entscheidungen"
-- `Tag2_01_Rechenoperatoren` live starten
+## Block 1 (20 min) - Rechnen und Werte
+- `Tag2_01_Rechenoperatoren`
+- `Tag2_09_Zuweisungsoperatoren`
+- `Tag2_10_InkrementDekrement`
+- `/`, `%`, `+=` und Schleifenzaehler gemeinsam erklaeren
 
-## Block 2 (20 min) - Vergleiche und Logik
+## Block 2 (25 min) - Vergleiche und boolesche Logik
 - `Tag2_02_VergleichsoperatorenUndLogik`
-- Gemeinsam Bedingungen lesen und in Alltagssprache uebersetzen
-- Mini-Challenge 2
+- `Tag2_11_BoolscheAusdruecke`
+- `Tag2_12_OperatorPrioritaet`
+- Quizfragen erst alleine, dann im Pair-Programming loesen
 
-## Block 3 (20 min) - if / else if / else
+## Block 3 (25 min) - Entscheidungen
 - `Tag2_03_IfElseElseIf`
-- Eigene Regeln bauen (z. B. Altersgruppen)
-- Mini-Challenge 4
-
-## Block 4 (10 min) - switch
+- `Tag2_14_VerschachtelteBedingungen`
 - `Tag2_04_SwitchBeispiele`
-- Wann `switch` sinnvoll ist
+- Regeln aus dem Alltag als Code formulieren
 
-## Block 5 (15 min) - Scanner interaktiv
+## Block 4 (20 min) - Eingaben
 - `Tag2_05_BenutzereingabenScanner`
-- Eingaben validieren (Zahl vs. Text)
+- Eingaben mit `Scanner` lesen und Zahlen sicher umwandeln
+- `Tag2_06_AbschlussprogrammAlterCheck` testen
 
-## Block 6 (10 min) - Erfolgserlebnis
-- `Tag2_06_AbschlussprogrammAlterCheck`
-- Jeder testet mit eigenen Werten
+## Block 5 (35 min) - Schleifen
+- `Tag2_16_Schleifen`
+- `Tag2_17_VerschachtelteSchleifen`
+- `Tag2_18_BreakContinue`
+- Schleifenzaehler, Abbruch und Muster ausprobieren
 
-## Optional (10+ min) - Spielmodus
+## Block 6 (30 min) - Methoden
+- `Tag2_19_Methoden`
+- `Tag2_20_Scope`
+- `Tag2_21_MethodOverloading`
+- Parameter, Argumente und Rueckgabewerte markieren
+
+## Abschluss und Hausaufgabe (25 min)
 - `Tag2_07_InteraktiverOperatorTrainer`
-- Kleine Lern-Challenge als Abschluss
-
-## Hausaufgabe
-- `Tag2_08_SelberAendern` bearbeiten
-- 3 eigene Bedingungen bauen
-- Einen neuen `switch`-Fall ergaenzen
-
+- `Tag2_08_SelberAendern`
+- `Quiz_Tag2.md` ohne `Loesungen_Tag2.md` bearbeiten
+- Einen Taschenrechner und ein eigenes Schleifenmuster bauen
