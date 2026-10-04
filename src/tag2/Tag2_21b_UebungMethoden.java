@@ -5,8 +5,7 @@ package tag2;
  * Methoden (Parameter, Argumente, return), lokale Variablen und Scope,
  * Method Overloading.
  *
- * Aufgabe: Ergaenze die mit TODO markierten Stellen.
- * Loesungen stehen ganz unten auskommentiert, falls du nicht weiterkommst.
+ * Aufgabe: Die Uebung zeigt fertige Beispiele fuer Methoden und Overloading.
  */
 public class Tag2_21b_UebungMethoden {
     public static void main(String[] args) {
@@ -15,37 +14,49 @@ public class Tag2_21b_UebungMethoden {
         // Aufgabe 1: Methode mit Rueckgabewert
         // Schreibe eine Methode "quadriere(int zahl)", die zahl * zahl zurueckgibt,
         // und rufe sie hier mit 6 auf.
-        // TODO: int ergebnis = quadriere(6);
-        // TODO: Gib ergebnis aus (erwartet: 36).
+        int ergebnis = quadriere(6);
+        System.out.println("Quadrat: " + ergebnis);
 
         // Aufgabe 2: void-Methode mit mehreren Parametern
         // Schreibe eine Methode "zeigeRechteck(int breite, int hoehe)", die
         // "Rechteck: <breite> x <hoehe>" ausgibt, und rufe sie mit 4 und 3 auf.
-        // TODO: zeigeRechteck(4, 3);
+        zeigeRechteck(4, 3);
 
         // Aufgabe 3: Scope
         // In der Methode "geheimzahl()" (unten zu ergaenzen) gibt es eine lokale Variable "code = 42".
         // Versuche NICHT, in main auf "code" zuzugreifen (das wuerde nicht kompilieren) -
         // rufe stattdessen geheimzahl() auf und beobachte, dass die Variable nur dort sichtbar ist.
-        // TODO: geheimzahl();
+        geheimzahl();
 
         // Aufgabe 4: Method Overloading
         // Schreibe zwei ueberladene Methoden "verdoppele":
         //   - verdoppele(int zahl) -> gibt zahl * 2 zurueck (int)
         //   - verdoppele(double zahl) -> gibt zahl * 2 zurueck (double)
         // Rufe beide Varianten auf und gib die Ergebnisse aus.
-        // TODO: System.out.println(verdoppele(5));
-        // TODO: System.out.println(verdoppele(2.5));
+        System.out.println(verdoppele(5));
+        System.out.println(verdoppele(2.5));
 
         System.out.println("Fertig! Vergleiche deine Ausgaben mit den erwarteten Werten in den Kommentaren.");
     }
 
-    // TODO: Aufgabe 1 - Methode quadriere(int zahl) implementieren
+    public static int quadriere(int zahl) {
+        return zahl * zahl;
+    }
 
-    // TODO: Aufgabe 2 - Methode zeigeRechteck(int breite, int hoehe) implementieren
+    public static void zeigeRechteck(int breite, int hoehe) {
+        System.out.println("Rechteck: " + breite + " x " + hoehe);
+    }
 
-    // TODO: Aufgabe 3 - Methode geheimzahl() implementieren (lokale Variable code = 42, ausgeben)
+    public static void geheimzahl() {
+        int code = 42;
+        System.out.println("Geheimzahl: " + code);
+    }
 
-    // TODO: Aufgabe 4 - zwei ueberladene Methoden verdoppele(...) implementieren
+    public static int verdoppele(int zahl) {
+        return zahl * 2;
+    }
+
+    public static double verdoppele(double zahl) {
+        return zahl * 2;
+    }
 }
-

@@ -7,7 +7,6 @@ public class Tag2_08_SelberAendern {
         Scanner scanner = new Scanner(System.in);
 
         // Denkfrage: Welche Eingaben machen beispielUnd und beispielOder gleichzeitig wahr?
-        // TODO 1: Aendere die Startwerte und beobachte die Ausgabe.
         int a = leseInt(scanner, "Gib a ein: ");
         int b = leseInt(scanner, "Gib b ein: ");
 
@@ -15,12 +14,10 @@ public class Tag2_08_SelberAendern {
         System.out.println("a + b = " + (a + b));
         System.out.println("a * b = " + (a * b));
 
-        // TODO 2: Ersetze die Bedingungen durch eigene Beispiele.
-        System.out.println("a > b: " + (a > b));
-        System.out.println("a == b: " + (a == b));
-        System.out.println("a != b: " + (a != b));
+        System.out.println("a ist positiv: " + (a > 0));
+        System.out.println("b ist gerade: " + (b % 2 == 0));
+        System.out.println("a und b sind verschieden: " + (a != b));
 
-        // TODO 3: Nutze &&, || und ! in eigenen Bedingungen.
         boolean beispielUnd = a > 10 && b > 5;
         boolean beispielOder = a < 5 || b < 5;
         boolean beispielNicht = !(a == b);
@@ -29,16 +26,16 @@ public class Tag2_08_SelberAendern {
         System.out.println("beispielOder: " + beispielOder);
         System.out.println("beispielNicht: " + beispielNicht);
 
-        // TODO 4: Ergaenze else if fuer eine dritte Kategorie.
         int age = leseInt(scanner, "Gib ein Alter ein: ");
         if (age >= 18) {
-            System.out.println("Adult");
+            System.out.println("Erwachsen");
+        } else if (age >= 13) {
+            System.out.println("Teenager");
         } else {
-            System.out.println("Minor");
+            System.out.println("Kind");
         }
 
-        // TODO 5: Erweitere den switch um mindestens zwei weitere Faelle.
-        System.out.print("Waehle einen Modus (easy, normal, hard): ");
+        System.out.print("Waehle einen Modus (easy, normal, hard, expert, training): ");
         String modus = scanner.nextLine().trim().toLowerCase();
         switch (modus) {
             case "easy":
@@ -49,6 +46,12 @@ public class Tag2_08_SelberAendern {
                 break;
             case "hard":
                 System.out.println("Schwerer Modus aktiv.");
+                break;
+            case "expert":
+                System.out.println("Expertenmodus aktiv.");
+                break;
+            case "training":
+                System.out.println("Trainingsmodus aktiv.");
                 break;
             default:
                 System.out.println("Unbekannter Modus.");

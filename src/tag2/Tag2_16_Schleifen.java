@@ -10,6 +10,7 @@ public class Tag2_16_Schleifen {
         System.out.println("\n=== while, do-while und for ===");
         // Denkfrage: Welche Schleife wuerde bei einem Grenzwert 0 trotzdem einmal laufen?
         int whileZaehler = 1;
+
         while (whileZaehler <= limit) {
             System.out.print(whileZaehler + " ");
             whileZaehler += 1;
@@ -17,6 +18,7 @@ public class Tag2_16_Schleifen {
 
         System.out.println("\nDo-while laeuft mindestens einmal:");
         int doZaehler = 1;
+
         do {
             System.out.print(doZaehler + " ");
             doZaehler += 1;

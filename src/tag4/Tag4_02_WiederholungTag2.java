@@ -1,85 +1,137 @@
 package tag4;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tag4_02_WiederholungTag2 {
     public static void main(String[] args) {
         System.out.println("=== Tag 4: Wiederholung von Tag 2 ===");
 
+
+        // This is an array of a String array
+        String[][] arr = new String[4][4];
+
         // Aufgabe 1: Fuehre die fuenf Grundrechenarten aus.
         int a = 17;
         int b = 5;
-        // TODO: Berechne Summe, Differenz, Produkt, Division und Rest.
-        // TODO: Gib alle Ergebnisse aus.
+        int summe = a + b;
+        int differenz = a - b;
+        int produkt = a * b;
+        int division = a / b;
+        int rest = a % b;
+        System.out.println("Summe: " + summe);
+        System.out.println("Differenz: " + differenz);
+        System.out.println("Produkt: " + produkt);
+        System.out.println("Division: " + division);
+        System.out.println("Rest: " + rest);
 
         // Aufgabe 2: Pruefe mit Vergleichsoperatoren, ob die Zahl positiv ist.
         int zahl = 8;
-        // TODO: Lege boolean istPositiv an.
-        // TODO: Lege boolean istKleinerAlsZehn an.
-        // TODO: Gib beide Wahrheitswerte aus.
+        boolean istPositiv = zahl > 0;
+        boolean istKleinerAlsZehn = zahl < 10;
+        System.out.println("Ist positiv: " + istPositiv);
+        System.out.println("Ist kleiner als zehn: " + istKleinerAlsZehn);
 
         // Aufgabe 3: Entscheide, ob jemand einen Film sehen darf.
         int alter = 15;
-        // TODO: Wenn alter mindestens 12 ist, gib "Film erlaubt" aus.
-        // TODO: Sonst gib "Film nicht erlaubt" aus.
+        if (alter >= 12) {
+            System.out.println("Film erlaubt");
+        } else {
+            System.out.println("Film nicht erlaubt");
+        }
 
         // Aufgabe 4: Finde die passende Note.
         int punkte = 78;
-        // TODO: >= 90: "Sehr gut"
-        // TODO: >= 75: "Gut"
-        // TODO: >= 50: "Bestanden"
-        // TODO: sonst: "Nicht bestanden"
+        if (punkte >= 90) {
+            System.out.println("Sehr gut");
+        } else if (punkte >= 75) {
+            System.out.println("Gut");
+        } else if (punkte >= 50) {
+            System.out.println("Bestanden");
+        } else {
+            System.out.println("Nicht bestanden");
+        }
 
         // Aufgabe 5: Verwende switch fuer eine einfache Wochentagsnummer.
-        int wochentag = 3;
-        // TODO: 1 = Montag, 2 = Dienstag, 3 = Mittwoch.
-        // TODO: Gib bei anderen Zahlen "Unbekannter Tag" aus.
+        int wochentag = 2;
+        switch (wochentag) {
+            case 1:
+                System.out.println("Montag");
+                break;
+            case 2:
+                System.out.println("Dienstag");
+                break;
+            case 3:
+                System.out.println("Mittwoch");
+                break;
+            default:
+                System.out.println("Unbekannter Tag");
+        }
 
         // Aufgabe 6: Verwende +=, -= und ++.
         int punkteStand = 10;
-        // TODO: Addiere 5 Punkte mit +=.
-        // TODO: Ziehe 2 Punkte mit -= ab.
-        // TODO: Erhoehe den Stand einmal mit ++.
-        // TODO: Gib den PunkteStand aus.
+        punkteStand += 5;
+        punkteStand -= 2;
+        punkteStand++;
+        System.out.println("PunkteStand: " + punkteStand);
 
         // Aufgabe 7: Nutze eine for-Schleife fuer die Zahlen 1 bis 5.
-        // TODO: Schreibe die for-Schleife und gib jede Zahl aus.
+        for (int nummer = 1; nummer <= 5; nummer++) {
+            System.out.println(nummer);
+        }
 
         // Aufgabe 8: Nutze eine while-Schleife fuer einen Countdown.
         int countdown = 3;
-        // TODO: Gib countdown aus und verringere ihn so lange, bis er 0 ist.
+        while (countdown >= 0) {
+            System.out.println(countdown);
+            countdown--;
+        }
 
         // Aufgabe 9: Gib nur gerade Zahlen von 1 bis 10 aus.
-        // TODO: Verwende eine for-Schleife und if.
+        for (int nummer = 1; nummer <= 10; nummer++) {
+            if (nummer % 2 == 0) {
+                System.out.println(nummer);
+            }
+        }
 
         // Aufgabe 10: Ueberspringe die Zahl 3.
-        // TODO: Gib mit einer Schleife die Zahlen 1 bis 5 aus.
-        // TODO: Verwende continue, damit die 3 nicht ausgegeben wird.
+        for (int nummer = 1; nummer <= 5; nummer++) {
+            if (nummer == 3) {
+                continue;
+            }
+            System.out.println(nummer);
+        }
 
         // Aufgabe 11: Schreibe eine sehr kleine Methode.
-        // TODO: Rufe begruessung() auf.
-        // TODO: Schreibe unten die Methode begruessung().
+        begruessung();
 
         // Aufgabe 12: Schreibe eine Methode mit Parameter.
-        // TODO: Rufe addiere(3, 4) auf und gib das Ergebnis aus.
-        // TODO: Schreibe unten die Methode addiere(int ersteZahl, int zweiteZahl).
+        System.out.println(addiere(3, 4));
 
         // Aufgabe 13: Schreibe eine Methode mit Rueckgabewert.
-        // TODO: Rufe istVolljaehrig(20) auf und gib das Ergebnis aus.
-        // TODO: Schreibe unten die Methode istVolljaehrig(int alter).
+        System.out.println(istVolljaehrig(20));
 
         System.out.println("Ende der Tag-2-Wiederholung.");
+
+        List<Integer> zahlen = new ArrayList<>();
+
+        zahlen.add(1);
+        zahlen.add(2);
+        zahlen.add(3);
+
+        zahlen.remove(Integer.valueOf(2));
+        System.out.println(zahlen);
     }
 
     public static void begruessung() {
-        // TODO: Gib hier eine kurze Begruessung aus.
+        System.out.println("Hallo aus der Methode!");
     }
 
     public static int addiere(int ersteZahl, int zweiteZahl) {
-        // TODO: Gib die Summe der beiden Parameter zurueck.
-        return 0;
+        return ersteZahl + zweiteZahl;
     }
 
     public static boolean istVolljaehrig(int alter) {
-        // TODO: Gib true zurueck, wenn alter mindestens 18 ist.
-        return false;
+        return alter >= 18;
     }
 }

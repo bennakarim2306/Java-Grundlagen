@@ -6,52 +6,56 @@ public class Tag4_01_WiederholungTag1 {
 
         // Aufgabe 1: Gib drei eigene Begruessungen aus.
         System.out.println("Hallo!");
-        // TODO: Gib deinen Namen aus.
-        // TODO: Gib deinen Lieblingsort aus.
-        // TODO: Gib einen dritten eigenen Satz aus.
+        System.out.println("Ich heisse Alex.");
+        System.out.println("Mein Lieblingsort ist die Bibliothek.");
+        System.out.println("Heute wiederhole ich Java-Grundlagen.");
 
         // Aufgabe 2: Lege Variablen fuer dein Alter und deine Lieblingszahl an.
-        // TODO: Ersetze die Beispielwerte durch eigene Werte.
-        int alter = 20;
-        int lieblingszahl = 7;
+        int alter = 19;
+        int lieblingszahl = 11;
         System.out.println("Alter: " + alter);
         System.out.println("Lieblingszahl: " + lieblingszahl);
 
         // Aufgabe 3: Lege je eine Variable fuer diese vier Datentypen an.
-        // TODO: Erstelle eine double-Variable fuer deine Koerpergroesse.
-        // TODO: Erstelle eine boolean-Variable fuer "magJava".
-        // TODO: Erstelle eine char-Variable mit deinem Anfangsbuchstaben.
         String vorname = "Alex";
+        double koerpergroesse = 1.78;
+        boolean magJava = true;
+        char anfangsbuchstabe = 'A';
         System.out.println("Vorname: " + vorname);
+        System.out.println("Koerpergroesse: " + koerpergroesse + " m");
+        System.out.println("Mag Java: " + magJava);
+        System.out.println("Anfangsbuchstabe: " + anfangsbuchstabe);
 
         // Aufgabe 4: Berechne das Alter im naechsten Jahr.
-        // TODO: Lege eine Variable alterNaechstesJahr an.
-        // TODO: Gib den Satz "Naechstes Jahr bin ich ... Jahre alt." aus.
+        int alterNaechstesJahr = alter + 1;
+        System.out.println("Naechstes Jahr bin ich " + alterNaechstesJahr + " Jahre alt.");
 
         // Aufgabe 5: Berechne den Preis fuer zwei gleiche Hefte.
         double preisEinHeft = 2.50;
-        // TODO: Berechne den Gesamtpreis fuer zwei Hefte.
-        // TODO: Gib den Gesamtpreis aus.
+        double gesamtpreis = preisEinHeft * 2;
+        System.out.println("Gesamtpreis: " + gesamtpreis + " EUR");
 
         // Aufgabe 6: Baue mit + einen kurzen Steckbrief zusammen.
-        // TODO: Gib Name, Alter und Lieblingszahl in einem Satz aus.
+        System.out.println(vorname + " ist " + alter + " Jahre alt und mag die Zahl " + lieblingszahl + ".");
 
         // Aufgabe 7: Erstelle ein kleines Kino-Ticket mit Variablen.
         String film = "Java im Kino";
         int sitzplatz = 4;
         double ticketPreis = 8.00;
-        // TODO: Gib Film, Sitzplatz und Preis in drei eigenen Zeilen aus.
+        System.out.println("Film: " + film);
+        System.out.println("Sitzplatz: " + sitzplatz);
+        System.out.println("Preis: " + ticketPreis + " EUR");
 
         // Aufgabe 8: Aendere nur die Werte, damit die Ausgabe zu dir passt.
-        String lieblingsessen = "Pizza";
-        int anzahlGeschwister = 1;
-        // TODO: Gib beide Variablen aus.
-        // TODO: Aendere mindestens einen Wert und starte das Programm erneut.
+        String lieblingsessen = "Pasta";
+        int anzahlGeschwister = 2;
+        System.out.println("Lieblingsessen: " + lieblingsessen);
+        System.out.println("Anzahl Geschwister: " + anzahlGeschwister);
 
         // Aufgabe 9: Schreibe ein eigenes Mini-Programm in den folgenden Schritten.
-        // TODO: Lege eine Variable fuer eine Stadt an.
-        // TODO: Lege eine Variable fuer die Einwohnerzahl an.
-        // TODO: Gib beides in einem Satz aus.
+        String stadt = "Hamburg";
+        int einwohnerzahl = 1892000;
+        System.out.println(stadt + " hat ungefaehr " + einwohnerzahl + " Einwohner.");
 
         System.out.println("Ende der Tag-1-Wiederholung.");
     }
